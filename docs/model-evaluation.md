@@ -31,15 +31,18 @@ Na de volledige training en fine-tuning is EfficientNetV2-S geëvalueerd op de t
 - **Test Loss:** 0.1806
 - **Algemene Prestatie:** Het model toont een stabiele generalisatie van de validatiedata naar de onafhankelijke testset. De diepe, progressieve feature-extractie zorgt ervoor dat zowel subtiele woekeringen als duidelijke structurele afwijkingen nauwkeurig worden geclassificeerd.
 - **Klinische Geschiktheid:** Voldoet aan de strengere eisen voor recall doordat de complexere randen van tumoren correct worden herkend in de `384x384` resolutie.
+- **Test Resultaten / Metriek:** `[resultaat antwoord]`
 
 ### 2.2 Model 2: MobileNetV2
 
 - **Evaluatiebevinding:** MobileNetV2 blinkt uit in inferentisnelheid en geheugenfootprint, maar laat op medische beeldkenmerken met fijne texturen een lichte achterstand zien in Recall ten opzichte van EfficientNetV2-S.
 - **Geschiktheid:** Minder geschikt als primaire diagnose-ondersteuning vanwege een iets hoger risico op het missen van rand-infiltraties, wel bruikbaar voor snelle edge-deployments.
+- **Test Resultaten / Metriek:** `[resultaat antwoord]`
 
 ### 2.3 Model 3: ResNet18
 
 - **Evaluatiebevinding:** ResNet18 functioneert naar behoren als stabiele baseline, maar mist de geavanceerde _fused-MBConv_ flexibiliteit van het EfficientNet. Hierdoor scoort het model lager op de complexere multi-class tumoronderscheidingen.
+- **Test Resultaten / Metriek:** `[resultaat antwoord]`
 
 ---
 
@@ -49,6 +52,7 @@ Tijdens de evaluatie zijn de misclassificaties nader bekeken:
 
 - **MRI-artefacten:** Scans met bewegingsruis of afwijkende belichting/contrast leiden incidenteel tot verwarring bij het model.
 - **Subtiele grenzen:** In gevallen waar de tumor zich bevindt op de grens van verschillende hersencompartimenten, neigt het model soms naar een conservatieve voorspelling.
+- **Gedetailleerde Foutanalyse / Confusion Matrix:** `[resultaat antwoord]`
 
 ---
 
