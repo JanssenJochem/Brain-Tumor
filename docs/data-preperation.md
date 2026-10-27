@@ -1,6 +1,6 @@
 # Data Preparation
 
-## Document Metadata
+## Document
 
 - **Document Status:** In Review
 - **Datum:** 27 oktober 2026
@@ -89,7 +89,7 @@ Er is gebruikgemaakt van **Stratified Splitting** (`stratify=unique_df['class']`
 
 ---
 
-## 6. Verificatie tegen Data Leakage
+## 6. Data Leakage
 
 Om te garanderen dat de voorbereiding 100% correct is verlopen, is een geautomatiseerde controle uitgevoerd middels programmeer-asserties (`assert`):
 
@@ -100,10 +100,16 @@ Resultaat: `Checks passed: no exact-hash overlap between splits.`
 
 ---
 
-## 7. Gegenereerde Deliverables
+## 7. Deliverables
 
 De data-voorbereidingsfase heeft de volgende bestanden gegenereerd in de map `prepared_data/` voor gebruik in de modelleringfase (`Modeling`):
 
 - `unique_images.csv`: Manifest van alle 2.845 unieke afbeeldingen met SHA-256 hashes.
 - `data_splits.csv`: Volledig overzicht van alle afbeeldingen inclusief de toegewezen split (`train`, `validation`, `test`).
 - `train.csv`, `validation.csv`, `test.csv`: Afzonderlijke manifest-bestanden per subset.
+
+---
+
+### Bronnen
+
+- **Bron 1:** Geef informatiebronnen op

@@ -1,6 +1,6 @@
 # Data Understanding
 
-## Document Metadata
+## Document
 
 - **Document Status:** In Review
 - **Datum:** 27 oktober 2026
